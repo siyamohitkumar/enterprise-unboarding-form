@@ -17,7 +17,7 @@
       Used to verify legal identity and residency
     </p>
 
-    <div class="flex mb-5 gap-x-2 gap-y-4">
+    <div class="flex mb-5 gap-2">
       <div class="flex flex-col gap-1">
         <label for="legalName" class="ui-label text-[15px] text-gray-900"
           >Legal Name</label
@@ -32,7 +32,9 @@
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="nationality" class="ui-label text-[15px] text-gray-900">Nationality</label>
+        <label for="nationality" class="ui-label text-[15px] text-gray-900"
+          >Nationality</label
+        >
         <select
           id="nationality"
           bind:value={selected}
@@ -45,7 +47,9 @@
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="residencyStatus" class="ui-label text-[15px] text-gray-900">Residency Status</label>
+        <label for="residencyStatus" class="ui-label text-[15px] text-gray-900"
+          >Residency Status</label
+        >
         <input
           id="residencyStatus"
           type="text"
@@ -56,7 +60,9 @@
       </div>
 
       <div class="flex flex-col gap-1 col-span-2">
-        <label for="dob" class="ui-label text-[15px] text-gray-900">Date of Birth</label>
+        <label for="dob" class="ui-label text-[15px] text-gray-900"
+          >Date of Birth</label
+        >
         <input
           id="dob"
           type="date"
@@ -75,22 +81,26 @@
 
     <div class="flex gap-2">
       <div class="flex flex-col gap-1">
-        <label for="riskCategory" class="ui-label text-[15px] text-gray-900">Risk Category</label>
+        <label for="riskCategory" class="ui-label text-[15px] text-gray-900"
+          >Risk Category</label
+        >
         <input
           id="riskCategory"
           type="text"
           bind:value={formState.riskCategory}
-          class="ui-input border border-gray-400 w-50 h-10 px-2 rounded"
+          class="ui-input border border-gray-400 w-60 h-10 px-2 rounded"
           placeholder="Low / Medium / High"
         />
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="pepStatus" class="ui-label text-[15px] text-gray-900">PEP Status</label>
+        <label for="pepStatus" class="ui-label text-[15px] text-gray-900"
+          >PEP Status</label
+        >
         <select
           id="pepStatus"
           bind:value={formState.pepStatus}
-          class="ui-input border border-gray-400 w-50 h-10 px-2 rounded"
+          class="ui-input border border-gray-400 w-60 h-10 px-2 rounded"
         >
           {#each pepStatus as status}
             <option value={status}>{status}</option>
@@ -99,14 +109,17 @@
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="sectionedCountry" class="ui-label text-[15px] text-gray-900">
+        <label
+          for="sectionedCountry"
+          class="ui-label text-[15px] text-gray-900"
+        >
           Sanctioned Country
         </label>
         <input
           id="sectionedCountry"
           type="text"
           bind:value={formState.sectionedCountry}
-          class="ui-input border border-gray-400 rounded w-50 h-10 px-2"
+          class="ui-input border border-gray-400 rounded w-60 h-10 px-2"
           placeholder="If applicable"
         />
       </div>

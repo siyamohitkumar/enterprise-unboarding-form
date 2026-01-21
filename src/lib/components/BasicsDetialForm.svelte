@@ -11,7 +11,7 @@
   </p>
 
   <!-- Radio Grid -->
-  <div class="font-light grid grid-cols-2 gap-y-2 w-[70%]">
+  <div class="font-light flex flex-wrap gap-2 w-[70%]">
     <div class="border border-gray-400 p-2 w-60 rounded py-2 px-4">
       <input
         type="radio"

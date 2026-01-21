@@ -89,7 +89,6 @@
 </script>
 
 <section class=" bg-linear-to-br from-slate-50 to-slate-100 py-4">
-  {activeIndex}
   <div class="max-w-6xl mx-auto">
     <!-- Header -->
     <div class="mb-4">

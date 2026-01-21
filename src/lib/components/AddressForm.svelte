@@ -10,7 +10,7 @@
       Used to verify your current residential address
     </p>
 
-    <div class="flex w-3xl flex-wrap gap-y-4 gap-x-3">
+    <div class="flex w-3xl flex-wrap gap-y-4 gap-x-2">
       <div class=" flex flex-col gap-1">
         <label for="addressLineOne" class="ui-label text-[15px] text-gray-900">
           Address Line 1
@@ -44,7 +44,7 @@
           id="city"
           type="text"
           bind:value={formState.city}
-          class="ui-input border border-gray-400 rounded w-53 h-10 text-[14px] px-2"
+          class="ui-input border border-gray-400 rounded w-80 h-10 text-[14px] px-2"
           placeholder="City"
         />
       </div>
@@ -57,7 +57,7 @@
           id="state"
           type="text"
           bind:value={formState.state}
-          class="ui-input border border-gray-400 rounded w-53 h-10 px-2 text-[14px]"
+          class="ui-input border border-gray-400 rounded w-80 h-10 px-2 text-[14px]"
           placeholder="State / Province"
         />
       </div>
@@ -70,7 +70,7 @@
           id="pinCode"
           type="number"
           bind:value={formState.pinCode}
-          class="ui-input border border-gray-400 w-53 rounded h-10 text-[14px] px-2"
+          class="ui-input border border-gray-400 w-80 rounded h-10 text-[14px] px-2"
           placeholder="Postal code"
         />
       </div>
@@ -83,7 +83,7 @@
           id="country"
           type="text"
           bind:value={formState.country}
-          class="ui-input border border-gray-400 rounded w-53 px-2 h-10 text-[14px]"
+          class="ui-input border border-gray-400 rounded w-80 px-2 h-10 text-[14px]"
           placeholder="Country"
           required
         />

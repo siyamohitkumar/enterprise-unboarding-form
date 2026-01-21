@@ -12,7 +12,7 @@
   Identifies the legal business entity.
 </p>
 
-<div class="flex flex-wrap gap-2 font-light">
+<div class="flex flex-wrap gap-x-2 gap-y-4 font-light">
   <div class="flex flex-col gap-1">
     <label for="entityType" class="text-[15px]">Entity Type</label>
     <select

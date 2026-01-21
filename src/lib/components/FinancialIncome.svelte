@@ -20,7 +20,7 @@
       Used for financial profiling and risk assessment
     </p>
 
-    <div class="flex flex-wrap gap-4">
+    <div class="flex flex-wrap gap-x-2 gap-y-4">
       <div class="flex flex-col gap-1">
         <label for="incomeSource" class="ui-label text-[15px] text-gray-900">
           Income Source
@@ -76,6 +76,19 @@
       </div>
 
       <div class="flex flex-col gap-1">
+        <label for="bankAccount" class="ui-label text-[15px] text-gray-900">
+          Bank Account Number
+        </label>
+        <input
+          id="bankAccount"
+          type="number"
+          bind:value={formState.bankAccount}
+          class="ui-input border w-55 h-10 px-2 border-gray-400 rounded"
+          placeholder="Account number"
+        />
+      </div>
+
+      <div class="flex flex-col gap-1">
         <label for="cryptoExposure" class="ui-label text-[15px] text-gray-900">
           Crypto Exposure
         </label>
@@ -88,19 +101,6 @@
             <option value={cryptoExposure}>{cryptoExposure}</option>
           {/each}
         </select>
-      </div>
-
-      <div class="flex flex-col gap-1">
-        <label for="bankAccount" class="ui-label text-[15px] text-gray-900">
-          Bank Account Number
-        </label>
-        <input
-          id="bankAccount"
-          type="number"
-          bind:value={formState.bankAccount}
-          class="ui-input border w-55 h-10 px-2 border-gray-400 rounded"
-          placeholder="Account number"
-        />
       </div>
     </div>
   </section>
