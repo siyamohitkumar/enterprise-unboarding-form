@@ -2,6 +2,8 @@ type FormWrapperState = {
   id: number;
   title: string;
   formState: any;
+  // isValidate: boolean;
+  validator:(input:any)=>boolean
 };
 
 type BasicsDetailState = {
