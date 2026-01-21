@@ -22,7 +22,9 @@
 
     <div class="flex flex-wrap gap-4">
       <div class="flex flex-col gap-1">
-        <label for="incomeSource" class="ui-label"> Income Source </label>
+        <label for="incomeSource" class="ui-label text-[15px] text-gray-900">
+          Income Source
+        </label>
         <input
           id="incomeSource"
           type="text"
@@ -33,7 +35,9 @@
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="anualIncome" class="ui-label"> Annual Income </label>
+        <label for="anualIncome" class="ui-label text-[15px] text-gray-900">
+          Annual Income
+        </label>
         <input
           id="anualIncome"
           type="number"
@@ -44,7 +48,9 @@
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="currency" class="ui-label"> Currency </label>
+        <label for="currency" class="ui-label text-[15px] text-gray-900">
+          Currency
+        </label>
         <select
           id="currency"
           bind:value={formState.currency}
@@ -57,7 +63,9 @@
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="taxResidency" class="ui-label"> Tax Residency </label>
+        <label for="taxResidency" class="ui-label text-[15px] text-gray-900">
+          Tax Residency
+        </label>
         <input
           id="taxResidency"
           type="text"
@@ -68,7 +76,9 @@
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="cryptoExposure" class="ui-label"> Crypto Exposure </label>
+        <label for="cryptoExposure" class="ui-label text-[15px] text-gray-900">
+          Crypto Exposure
+        </label>
         <select
           id="cryptoExposure"
           bind:value={formState.cryptoExposure}
@@ -81,7 +91,9 @@
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="bankAccount" class="ui-label"> Bank Account Number </label>
+        <label for="bankAccount" class="ui-label text-[15px] text-gray-900">
+          Bank Account Number
+        </label>
         <input
           id="bankAccount"
           type="number"

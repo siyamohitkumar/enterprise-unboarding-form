@@ -19,7 +19,9 @@
 
     <div class="flex mb-5 gap-x-2 gap-y-4">
       <div class="flex flex-col gap-1">
-        <label for="legalName" class="ui-label">Legal Name</label>
+        <label for="legalName" class="ui-label text-[15px] text-gray-900"
+          >Legal Name</label
+        >
         <input
           id="legalName"
           type="text"
@@ -30,7 +32,7 @@
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="nationality" class="ui-label">Nationality</label>
+        <label for="nationality" class="ui-label text-[15px] text-gray-900">Nationality</label>
         <select
           id="nationality"
           bind:value={selected}
@@ -43,7 +45,7 @@
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="residencyStatus" class="ui-label">Residency Status</label>
+        <label for="residencyStatus" class="ui-label text-[15px] text-gray-900">Residency Status</label>
         <input
           id="residencyStatus"
           type="text"
@@ -54,7 +56,7 @@
       </div>
 
       <div class="flex flex-col gap-1 col-span-2">
-        <label for="dob" class="ui-label">Date of Birth</label>
+        <label for="dob" class="ui-label text-[15px] text-gray-900">Date of Birth</label>
         <input
           id="dob"
           type="date"
@@ -73,7 +75,7 @@
 
     <div class="flex gap-2">
       <div class="flex flex-col gap-1">
-        <label for="riskCategory" class="ui-label">Risk Category</label>
+        <label for="riskCategory" class="ui-label text-[15px] text-gray-900">Risk Category</label>
         <input
           id="riskCategory"
           type="text"
@@ -84,7 +86,7 @@
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="pepStatus" class="ui-label">PEP Status</label>
+        <label for="pepStatus" class="ui-label text-[15px] text-gray-900">PEP Status</label>
         <select
           id="pepStatus"
           bind:value={formState.pepStatus}
@@ -97,7 +99,7 @@
       </div>
 
       <div class="flex flex-col gap-1">
-        <label for="sectionedCountry" class="ui-label">
+        <label for="sectionedCountry" class="ui-label text-[15px] text-gray-900">
           Sanctioned Country
         </label>
         <input

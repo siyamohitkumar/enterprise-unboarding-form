@@ -63,11 +63,13 @@
     return forms[activeIndex].validator(forms[activeIndex].formState);
   }
 
-  function showForm(e: any) {
+  function showForm(index: number) {
+    if (index <= activeIndex) {
+      activeIndex = index;
+      return;
+    }
     if (validateForm()) {
-      console.log(e.target.value);
-      activeIndex = Number(e.target.value);
-      console.log(Number(e.target.value));
+      activeIndex = index;
     } else {
       alert('Please fill the form');
     }
@@ -111,26 +113,15 @@
         <div class="space-y-6">
           {#each forms as form, index}
             <button
-              onclick={showForm}
+              onclick={() => {
+                showForm(index);
+              }}
               value={index}
               class="flex gap-2 items-start text-left w-60 group bg-[#F2F2F2] py-1 px-2 rounded {activeIndex ===
               index
                 ? 'bg-[#F5F5F5]'
                 : ''} hover:bg-gray-200"
             >
-              <!-- Indicator -->
-              <!-- <div
-                class="
-                  h-8 w-8 rounded-full flex items-center justify-center
-                  font-medium text-sm transition 
-                  {index === activeIndex
-                  ? 'bg-blue-600 text-white shadow-lg'
-                  : index < activeIndex
-                    ? 'bg-blue-100 text-blue-700'
-                    : 'bg-slate-200 text-slate-400'}
-                "
-              > -->
-              <!-- {index < activeIndex ? '✓' : index + 1} -->
               <span
                 class=" rounded-[50%] w-8 h-8 text-center p-0.75 {activeIndex ===
                 index

@@ -41,7 +41,9 @@
   </div>
 
   <div class="flex flex-col gap-1">
-    <label for="countryOfIncorporation">Country of Incorporation</label>
+    <label for="countryOfIncorporation " class="text-[15px]"
+      >Country of Incorporation</label
+    >
     <input
       type="text"
       id="countryOfIncorporation"
@@ -52,7 +54,7 @@
   </div>
 
   <div class="flex flex-col gap-1">
-    <label for="shareHolders">Share Holder</label>
+    <label for="shareHolders " class="text-[15px]">Share Holder</label>
     <input
       type="text"
       id="shareHolders"
@@ -63,7 +65,7 @@
   </div>
 
   <div class="flex flex-col gap-1">
-    <label for="directors" class="text-[14px]">Director</label>
+    <label for="directors" class="text-[15px]">Director</label>
     <input
       type="text"
       id="directors"

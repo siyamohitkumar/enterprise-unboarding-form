@@ -10,9 +10,11 @@
       Used to verify your current residential address
     </p>
 
-    <div class="flex w-3xl flex-wrap gap-2">
-      <div class=" flex flex-col">
-        <label for="addressLineOne" class="ui-label"> Address Line 1 </label>
+    <div class="flex w-3xl flex-wrap gap-y-4 gap-x-3">
+      <div class=" flex flex-col gap-1">
+        <label for="addressLineOne" class="ui-label text-[15px] text-gray-900">
+          Address Line 1
+        </label>
         <input
           id="addressLineOne"
           type="text"
@@ -22,8 +24,8 @@
         />
       </div>
 
-      <div class=" flex flex-col">
-        <label for="addressLineTwo" class="ui-label">
+      <div class=" flex flex-col gap-1">
+        <label for="addressLineTwo" class="ui-label text-[15px] text-gray-900">
           Address Line 2 (Optional)
         </label>
         <input
@@ -35,8 +37,9 @@
         />
       </div>
 
-      <div class="flex flex-col">
-        <label for="city" class="ui-label">City</label>
+      <div class="flex flex-col gap-1">
+        <label for="city" class="ui-label text-[15px] text-gray-900">City</label
+        >
         <input
           id="city"
           type="text"
@@ -46,8 +49,10 @@
         />
       </div>
 
-      <div class="flex flex-col">
-        <label for="state" class="ui-label">State</label>
+      <div class="flex flex-col gap-1">
+        <label for="state" class="ui-label text-[15px] text-gray-900"
+          >State</label
+        >
         <input
           id="state"
           type="text"
@@ -57,8 +62,10 @@
         />
       </div>
 
-      <div class="flex flex-col">
-        <label for="pinCode" class="ui-label">Pin Code</label>
+      <div class="flex flex-col gap-1">
+        <label for="pinCode" class="ui-label text-[15px] text-gray-900"
+          >Pin Code</label
+        >
         <input
           id="pinCode"
           type="number"
@@ -68,8 +75,10 @@
         />
       </div>
 
-      <div class="flex flex-col">
-        <label for="country" class="ui-label">Country</label>
+      <div class="flex flex-col gap-1">
+        <label for="country" class="ui-label text-[15px] text-gray-900"
+          >Country</label
+        >
         <input
           id="country"
           type="text"
